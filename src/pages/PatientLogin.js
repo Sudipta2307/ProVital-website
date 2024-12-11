@@ -4,7 +4,6 @@ import "./PatientLogin.css";
 const PatientLogin = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add login logic here
     alert("Patient login submitted!");
   };
 
