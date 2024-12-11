@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -39,7 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 =======
 # ProVital-Healthcare-App
 **ProVital** is a modern web app crafted to streamline healthcare interactions. With a responsive design, seamless navigation, and secure patient-doctor registrations, it ensures efficiency and accessibility. Building ProVital was a rewarding journey, enhancing my skills and creating a solution that simplifies healthcare for users.
->>>>>>> c54e4ae1b89e0909abfec3c92287fd01b5477ef3
-=======
-# Provital
->>>>>>> 4fb792cbbbec407746faff74f30ca5ade459ed72
+
