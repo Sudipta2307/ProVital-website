@@ -1,0 +1,164 @@
+/* Basic container for the entire section */
+.lifestyle {
+  margin-top: 180px;
+  margin-left: 55px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  width: 100%;
+}
+
+/* Gradient strip */
+.gradient-strip {
+  position: relative;
+  display: flex;
+  margin-left: -55px;
+  margin-top: -190px;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  top:0%;
+  width: 100%; /* Corrected width */
+  height: 45px; /* Adjust the height of the strip */
+  background: linear-gradient(45deg, #F0C971, #E5688C); /* Gradient for strip */
+  transform: skewY(-5deg); /* Add skew for style */
+  z-index: +1; /* Ensure it's behind the content */
+}
+
+/* Main Title */
+.main-title {
+  font-size: 1.5rem;
+  color: grey;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10%;
+}
+
+/* Section Header */
+.section-header {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.25rem;
+  color: grey;
+  margin-top: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #f0c971, #e5688c);
+  -webkit-background-clip: text; /* Standard property for background-clip */
+  background-clip: text; /* Vendor-specific property for WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Ensures text color is transparent for gradient */
+}
+
+
+/* Tabs Container */
+.tabs-container {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  color: grey;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tab:hover {
+  background: #f0f0f0;
+}
+
+.tab.active {
+  background: black;
+  color: white;
+}
+
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  height: 100%;
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  flex: 0 0 493px; /* Fixed width */
+  margin: 0 15px; /* Adjusted spacing */
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: grey;
+}
+
+/* Arrows */
+.arrow {
+  background: none;
+  border: none;
+  position: relative;
+  margin-top: -3%;
+  display: flex;
+  justify-content: right;
+  right: 100px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow img {
+  width: 50px;
+  height: 50px;
+}

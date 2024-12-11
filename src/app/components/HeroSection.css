@@ -1,0 +1,235 @@
+/* General layout */
+.hero-section-container {
+  position: relative; /* Ensure the section is positioned for layering */
+  display: flex;
+  background-color: white;
+  margin: 5px auto;
+  width: 90%;
+  max-width: 100%;
+  height: 615px; /* Fixed height */
+  z-index: 1; /* Ensure it's above the gradient background */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.hero-section-container::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute; /* Proper absolute positioning */
+  top: 65%; /* Center the gradient vertically */
+  left: 35%; /* Center the gradient horizontally */
+  transform: translate(-50%, -50%); /* Adjust for true centering */
+  width: 100%; /* Ensure the gradient covers the section */
+  height: 100%; /* Match width for circular shape */
+  background: radial-gradient(circle, #fa9a33 0%, rgba(255, 255, 255, 0) 30%); /* Circular gradient */
+  filter: blur(75px); /* Apply blur effect */
+  z-index: -1; /* Push it behind all other content */
+  pointer-events: none; /* Ensure it doesn’t affect interactions */
+}
+
+/* Image Carousel Background Section */
+.image-carousel-background {
+  position: relative;
+  width: 90%; /* Occupies left half */
+  height: 100%;
+  overflow: hidden; /* Corrected invalid property */
+  display: flex;
+  justify-content: center;
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+}
+
+/* Image Columns */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 530px;
+  overflow: hidden;
+}
+
+.scroll-down img,
+.scroll-up img {
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+  border-radius: 15px;
+  animation: scroll-medium 8s linear infinite;
+}
+
+.scroll-up img {
+  animation-direction: reverse;
+}
+
+@keyframes scroll-medium {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Welcome Text Section */
+.welcome-text {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Ensure row-wise alignment */
+  align-items: flex-start; /* Align content to the left */
+  margin-bottom: 10px;
+  margin-left: 45px;
+  text-align: left; 
+}
+
+.welcome-text h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0; /* Remove extra bottom margin */
+  color: #333;
+  line-height: 1.2;
+}
+
+.welcome-text h1 span {
+  background: linear-gradient(90deg, #4683D0 0%, #7CD0A2 100%); /* Set gradient colors */
+  -webkit-background-clip: text; /* Standard property for background-clip */
+  background-clip: text; /* Vendor-specific property for WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Ensures text color is transparent for gradient */
+  font-weight: bold;
+}
+
+.welcome-text p {
+  font-size: 1.5rem;
+  color: #aaa; 
+  margin-bottom: 20px;
+  text-align: left; 
+  gap: 5px; /* Space between heading and paragraph */
+}
+
+/* Search Bar Container */
+.search-bar-container {
+  position: absolute;
+  bottom: 95px; /* Positioned 95px above the bottom */
+  width: 80%;
+  display: flex;
+  left: 8%;
+  justify-content: right;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+  min-width: 920px;
+  min-height: 92px;
+}
+
+
+
+.search-bar .icon1 {
+  position: absolute;
+  left: 30px; /* Adjust to position the icon inside the input */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  pointer-events: none; /* Ensure the icon does not block user interaction */
+  width: 20px; /* Set the icon size */
+  height: 20px; /* Set the icon size */
+
+}
+
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.search-bar input,
+.search-bar select {
+  flex: 1;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s;
+  height: auto;
+}
+
+.search-bar input::placeholder {
+  color: #a0a0a0;
+}
+
+.search-bar input:focus {
+  border-color: #007BFF;
+}
+
+.search-bar button {
+  background: linear-gradient(90deg, #7CD0A2 0%, #4683D0 100%);
+  color: white;
+  font-size: 1rem;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 4px 8px rgba(0, 91, 204, 0.4);
+}
+
+/* Adjustments for Search Bar Items */
+.search-bar input {
+  width: 100%;
+  height: 35px;
+}
+
+.search-bar select {
+  width: 100%;
+  height: 75px;
+}
+
+.search-bar button {
+  width: 15%;
+  height: 75px;
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero-section-container {
+    flex-direction: column; /* Stack the sections vertically */
+    height: auto;
+  }
+
+  .image-carousel-background {
+    width: 100%; /* Take full width */
+    height: 300px; /* Adjust height for mobile */
+  }
+
+  .welcome-text {
+    width: 100%;
+    text-align: center; /* Center-align text on mobile */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .search-bar-container {
+    position: static; /* Adjust positioning for mobile */
+    margin-top: 15px;
+  }
+
+  .search-bar {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px;
+  }
+}

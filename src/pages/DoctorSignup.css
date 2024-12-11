@@ -1,0 +1,117 @@
+/* Reset and Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafc;
+  }
+  
+  /* Signup Page Styles */
+  .signup-page {
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Section */
+  .signup-header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .signup-header img {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .signup-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  /* Form Styles */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column; /* This ensures the label is above the input box */
+    gap: 5px; /* Adds space between the label and the input */
+  }
+  
+  .input-field label {
+    font-size: 14px;
+    color: #555555;
+    font-weight: 600;
+  }
+  
+  .input-field input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Buttons */
+  .signup-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .reset-button {
+    background-color: #6c757d;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-button:hover {
+    background-color: #565e64;
+  }
+  
+  /* Additional Links */
+  .additional-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .additional-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .additional-links a:hover {
+    text-decoration: underline;
+  }
+  
