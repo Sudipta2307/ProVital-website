@@ -42,5 +42,4 @@ To learn more about React.js, take a look at the following resources:
 - [React.js Documentation](https://reactjs.org/docs/getting-started.html) - Learn about React.js features and API.
 - [React.js GitHub](https://github.com/facebook/react) - Your feedback and contributions are welcome!
 
-```
 
