@@ -4,12 +4,10 @@ import "./PatientSignup.css";
 const PatientSignup = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add signup logic here
     alert("Patient signup submitted!");
   };
 
   const handleReset = () => {
-    // Reset form fields if needed
     alert("Form reset!");
   };
 
