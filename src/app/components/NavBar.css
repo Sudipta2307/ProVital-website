@@ -3,9 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background: #ffffff; /* Background Color */
+  background: #ffffff; 
   font-family: 'Roboto', sans-serif;
-  color: grey; /* Font Color */
+  color: grey; 
   max-height: 60px;
 }
 
