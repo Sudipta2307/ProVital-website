@@ -4,7 +4,6 @@ import "./DoctorLogin.css";
 const DoctorLogin = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add form validation or API request logic here
     alert("Login submitted!");
   };
 
