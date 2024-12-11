@@ -1,36 +1,35 @@
-/* General layout */
 .hero-section-container {
-  position: relative; /* Ensure the section is positioned for layering */
+  position: relative; 
   display: flex;
   background-color: white;
   margin: 5px auto;
   width: 90%;
   max-width: 100%;
-  height: 615px; /* Fixed height */
-  z-index: 1; /* Ensure it's above the gradient background */
-  overflow: hidden; /* Prevent overflow issues */
+  height: 615px; 
+  z-index: 1; 
+  overflow: hidden; 
 }
 
 .hero-section-container::before {
-  content: ""; /* Required for pseudo-element */
-  position: absolute; /* Proper absolute positioning */
-  top: 65%; /* Center the gradient vertically */
-  left: 35%; /* Center the gradient horizontally */
-  transform: translate(-50%, -50%); /* Adjust for true centering */
-  width: 100%; /* Ensure the gradient covers the section */
-  height: 100%; /* Match width for circular shape */
-  background: radial-gradient(circle, #fa9a33 0%, rgba(255, 255, 255, 0) 30%); /* Circular gradient */
-  filter: blur(75px); /* Apply blur effect */
-  z-index: -1; /* Push it behind all other content */
-  pointer-events: none; /* Ensure it doesn’t affect interactions */
+  content: ""; 
+  position: absolute; 
+  top: 65%; 
+  left: 35%; 
+  transform: translate(-50%, -50%); 
+  width: 100%; 
+  height: 100%; 
+  background: radial-gradient(circle, #fa9a33 0%, rgba(255, 255, 255, 0) 30%); 
+  filter: blur(75px); 
+  z-index: -1; 
+  pointer-events: none; 
 }
 
-/* Image Carousel Background Section */
+
 .image-carousel-background {
   position: relative;
-  width: 90%; /* Occupies left half */
+  width: 90%; 
   height: 100%;
-  overflow: hidden; /* Corrected invalid property */
+  overflow: hidden; 
   display: flex;
   justify-content: center;
 }
@@ -79,8 +78,8 @@
   margin-top: 5%;
   width: 100%;
   display: flex;
-  flex-direction: column; /* Ensure row-wise alignment */
-  align-items: flex-start; /* Align content to the left */
+  flex-direction: column; 
+  align-items: flex-start; 
   margin-bottom: 10px;
   margin-left: 45px;
   text-align: left; 
@@ -89,16 +88,16 @@
 .welcome-text h1 {
   font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 0; /* Remove extra bottom margin */
+  margin-bottom: 0; 
   color: #333;
   line-height: 1.2;
 }
 
 .welcome-text h1 span {
-  background: linear-gradient(90deg, #4683D0 0%, #7CD0A2 100%); /* Set gradient colors */
-  -webkit-background-clip: text; /* Standard property for background-clip */
-  background-clip: text; /* Vendor-specific property for WebKit browsers */
-  -webkit-text-fill-color: transparent; /* Ensures text color is transparent for gradient */
+  background: linear-gradient(90deg, #4683D0 0%, #7CD0A2 100%); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  -webkit-text-fill-color: transparent; 
   font-weight: bold;
 }
 
@@ -107,13 +106,13 @@
   color: #aaa; 
   margin-bottom: 20px;
   text-align: left; 
-  gap: 5px; /* Space between heading and paragraph */
+  gap: 5px; 
 }
 
 /* Search Bar Container */
 .search-bar-container {
   position: absolute;
-  bottom: 95px; /* Positioned 95px above the bottom */
+  bottom: 95px; 
   width: 80%;
   display: flex;
   left: 8%;
@@ -130,12 +129,12 @@
 
 .search-bar .icon1 {
   position: absolute;
-  left: 30px; /* Adjust to position the icon inside the input */
+  left: 30px; 
   top: 50%;
-  transform: translateY(-50%); /* Vertically center the icon */
-  pointer-events: none; /* Ensure the icon does not block user interaction */
-  width: 20px; /* Set the icon size */
-  height: 20px; /* Set the icon size */
+  transform: translateY(-50%); 
+  pointer-events: none; 
+  width: 20px; 
+  height: 20px; 
 
 }
 
@@ -187,7 +186,7 @@
   box-shadow: 0px 4px 8px rgba(0, 91, 204, 0.4);
 }
 
-/* Adjustments for Search Bar Items */
+
 .search-bar input {
   width: 100%;
   height: 35px;
@@ -207,29 +206,29 @@
 /* Responsiveness */
 @media (max-width: 768px) {
   .hero-section-container {
-    flex-direction: column; /* Stack the sections vertically */
+    flex-direction: column; 
     height: auto;
   }
 
   .image-carousel-background {
-    width: 100%; /* Take full width */
-    height: 300px; /* Adjust height for mobile */
+    width: 100%; 
+    height: 300px; 
   }
 
   .welcome-text {
     width: 100%;
-    text-align: center; /* Center-align text on mobile */
+    text-align: center; 
     align-items: center;
     padding: 20px;
   }
 
   .search-bar-container {
-    position: static; /* Adjust positioning for mobile */
+    position: static; 
     margin-top: 15px;
   }
 
   .search-bar {
-    flex-direction: column; /* Stack inputs vertically */
+    flex-direction: column; 
     gap: 10px;
   }
 }
