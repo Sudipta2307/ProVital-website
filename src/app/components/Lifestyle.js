@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import "./Lifestyle.css";
 
 const Lifestyle = () => {
-  const [currentIndex, setCurrentIndex] = useState(0); // Manage the currently active card
+  const [currentIndex, setCurrentIndex] = useState(0); 
 
-  // Pillars data
+  
   const pillars = [
     {
       title: "Nutrition",
@@ -46,7 +46,7 @@ const Lifestyle = () => {
     },
   ];
 
-  // Handlers for navigation
+  
   const scrollLeft = () => {
     setCurrentIndex((prev) => (prev === 0 ? pillars.length - 1 : prev - 1));
   };
