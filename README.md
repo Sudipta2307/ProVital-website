@@ -44,13 +44,3 @@ To learn more about React.js, take a look at the following resources:
 
 ```
 
----
-
-### **Final Notes**
-- The **"ProVital-Healthcare-App"** description looks great! It gives a clear overview of your project's purpose.
-- After updating your README, commit the changes and push them to GitHub:
-  ```bash
-  git add README.md
-  git commit -m "Updated README for React.js project"
-  git push origin main
-  ```
